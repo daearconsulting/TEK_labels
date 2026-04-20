@@ -28,7 +28,6 @@ This toolkit is aligned with four complementary frameworks:
 | **IEEE 2890-2025** | Provenance of Indigenous Peoples' data (machine-readable ethical lineage) |
 
 ## Repository Structure
-
 ```
 local_contexts_geospatial/
 ├── localcontexts/              # Reusable Python toolkit (pip-installable)
