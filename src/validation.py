@@ -150,8 +150,7 @@ def validate_label_present(
 ) -> bool:
     """
     Check that a metadata dict carries at least one TK or BC label.
-
-    Use this as a pre-flight check for datasets that should be labeled.
+    Use this as a check for datasets that should be labeled.
     Emits a MissingLabelWarning by default (warn_only=True).
 
     Parameters
@@ -185,7 +184,6 @@ def validate_provenance_intact(
 ) -> bool:
     """
     Check that TK/BC label fields are present and populated in a derived dataset.
-
     Use after propagation steps to verify labels weren't accidentally dropped.
 
     Parameters
@@ -226,7 +224,6 @@ def validate_export_ready(
 ) -> dict:
     """
     Run all pre-export validation checks in sequence.
-
     Call this immediately before writing any labeled dataset to disk,
     sharing with external parties, or publishing.
 
@@ -308,7 +305,6 @@ def check_collective_benefit(
 ) -> None:
     """
     CARE Collective Benefit check.
-
     Prompts the analyst to document how the analysis benefits the originating
     community. Does not block execution, records the benefit description in
     the metadata as a CARE compliance note.
@@ -332,7 +328,6 @@ def check_authority_to_control(
 ) -> None:
     """
     CARE Authority to Control check.
-
     Records whether community consent was obtained for this use.
     Raises a warning if consent_obtained=False for sensitive labels.
 

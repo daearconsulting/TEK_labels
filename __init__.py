@@ -1,12 +1,11 @@
 """
-localcontexts-geo — Local Contexts TK/BC labels in geospatial workflows.
+localcontexts-geo Local Contexts TK/BC labels in geospatial workflows.
 
 A toolkit for embedding Traditional Knowledge (TK) and Biocultural (BC)
 labels in geospatial data pipelines so they persist through transformations,
 survive exports, and are checked before data is shared or used downstream.
 
 Quick start
------------
 >>> from localcontexts.labels import TKMetadata, TKLabel
 >>> from localcontexts.propagation import propagate_labels
 >>> from localcontexts.validation import validate_usage
@@ -23,15 +22,13 @@ Quick start
 True
 
 Modules
--------
-labels      — TKMetadata, BCMetadata, TKLabel, BCLabel (no geo dependencies)
-propagation — propagate_labels(), enforce_label_propagation decorator
-validation  — validate_usage(), validate_export_ready(), CARE checks
-spatial     — geometry-scoped assignment (requires geopandas)
-provenance  — IEEE 2890-2025 aligned provenance chain
+labels      : TKMetadata, BCMetadata, TKLabel, BCLabel (no geo dependencies)
+propagation : propagate_labels(), enforce_label_propagation decorator
+validation  : validate_usage(), validate_export_ready(), CARE checks
+spatial     : geometry-scoped assignment (requires geopandas)
+provenance  : IEEE 2890-2025 aligned provenance chain
 
 Frameworks
-----------
 Local Contexts : https://localcontexts.org/
 OCAP®          : https://fnigc.ca/ocap-training/
 CARE           : https://www.gida-global.org/care
@@ -40,7 +37,7 @@ IEEE 2890-2025 : https://standards.ieee.org/ieee/2890/10318/
 """
 
 __version__ = "0.1.0"
-__author__  = "Lilly Jones, PhD — Daear Consulting, LLC"
+__author__  = "Lilly Jones, PhD, Daear Consulting, LLC"
 
 from .labels import (
     TKLabel,

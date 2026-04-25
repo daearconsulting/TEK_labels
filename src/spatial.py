@@ -48,7 +48,6 @@ def assign_label_by_geometry(
 ) -> Optional[dict]:
     """
     Assign a TK label to a dataset based on spatial overlap with labeled zones.
-
     Returns the label metadata dict for the first overlapping zone, or None
     if no overlap exists.
 
@@ -113,7 +112,6 @@ def assign_labels_to_geodataframe(
     """
     Spatially assign TK labels to features in a GeoDataFrame based on overlap
     with labeled zone polygons.
-
     Features that do not overlap any labeled zone receive None for label fields.
 
     Parameters
@@ -123,7 +121,7 @@ def assign_labels_to_geodataframe(
     community_col        : Column in label_zones with community names
     output_label_col     : Name for the label column in the output GeoDataFrame
     output_community_col : Name for the community column in the output
-    how                  : Spatial predicate — 'intersects' or 'within'
+    how                  : Spatial predicate such as 'intersects' or 'within'
 
     Returns
     GeoDataFrame with TK label columns added
@@ -176,7 +174,6 @@ def build_label_zone(
 ) -> "gpd.GeoDataFrame":
     """
     Create a single-row GeoDataFrame representing a labeled authority zone.
-
     Useful for building label zone layers from scratch when working with
     Tribal boundary data.
 
@@ -212,7 +209,6 @@ def get_label_coverage_report(
 ) -> dict:
     """
     Summarize TK label coverage across features in a GeoDataFrame.
-
     Returns a dict with counts of labeled vs. unlabeled features,
     label distribution, and area coverage if geometry is polygon.
 

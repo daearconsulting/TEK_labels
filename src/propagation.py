@@ -50,7 +50,7 @@ def propagate_labels(parent_meta: dict, child_meta: dict) -> dict:
         if k not in result:
             result[k] = v
 
-    # Propagate BC fields:  do not overwrite existing child labels
+    # Propagate BC fields: do not overwrite existing child labels
     for k, v in bc_fields.items():
         if k not in result:
             result[k] = v

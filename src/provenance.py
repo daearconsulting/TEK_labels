@@ -32,7 +32,6 @@ class ProvenanceOrigin:
     """
     Records the origin of a dataset: where it came from, who it is about,
     and what cultural authority it carries.
-
     Aligned with IEEE 2890-2025 core provenance parameters.
     """
     # What the data is about
@@ -177,7 +176,6 @@ class ProvenanceRecord:
     def save(self, path: str | Path) -> Path:
         """
         Save provenance record as a JSON sidecar file.
-
         Convention: sidecar lives alongside the data file with the same
         stem and a .provenance.json extension.
         ex., water_stress.tif to water_stress.provenance.json
@@ -269,7 +267,6 @@ def extract_provenance_from_meta(meta: dict) -> ProvenanceRecord | None:
     """
     Reconstruct a ProvenanceRecord from a metadata dict that was
     created with attach_provenance_to_meta().
-
     Returns None if no provenance record is found.
     """
     prov_json = meta.get("prov:record")

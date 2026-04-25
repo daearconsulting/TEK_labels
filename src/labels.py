@@ -1,5 +1,5 @@
 """
-labels.py — TK and BC label schema and metadata objects.
+labels.py jhjhTK and BC label schema and metadata objects.
 
 This module has zero geospatial dependencies. TKMetadata and BCMetadata
 work with plain Python dicts and can be used in any data pipeline.
@@ -228,7 +228,7 @@ class BCMetadata:
     Biocultural label metadata for biological diversity and genetic resource data.
 
     BC labels address the cultural relationships Indigenous communities have
-    with biological resources — plants, animals, and ecosystems.
+    with biological resources such as plants, animals, and ecosystems.
 
     Parameters
     label       : BCLabel enum value

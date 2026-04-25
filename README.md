@@ -151,5 +151,5 @@ these frameworks is appropriate when using or extending this toolkit:
 - IEEE 2890-2025: https://standards.ieee.org/ieee/2890/10318/
 
 ## Citation
-Jones, L. and Sanovia, J. (2025). Local Contexts Labels in Geospatial Workflows.
+Jones, L. and Sanovia, J. (2026). Local Contexts Labels in Geospatial Workflows.
 Daear Consulting, LLC. https://github.com/daearconsulting/local_contexts_geospatial
