@@ -195,20 +195,20 @@ meta = bc.attach(meta)
 ```
 Does this data involve Indigenous Peoples' knowledge, practices,
 or observations?
-  └─ YES Does it involve biological resources specifically
+  └─ YES: Does it involve biological resources specifically
            (species, plants, animals, genetics)?
-               ├─ YES Use BC label (and TK label if cultural
+               ├─ YES: Use BC label (and TK label if cultural
                │         knowledge is also involved)
-               └─ NO  Use TK label
-  └─ NO  Consider TK Notice if data covers Tribal lands
+               └─ NO:  Use TK label
+  └─ NO:  Consider TK Notice if data covers Tribal lands
 
 Is the appropriate label already determined by the community?
-  ├─ YES Use the specified label
-  └─ NO  Use TK Notice while consultation is pending
+  ├─ YES: Use the specified label
+  └─ NO:  Use TK Notice while consultation is pending
 
 Is the data for community-internal use only?
-  ├─ YES TK Community Use Only
-  └─ NO  Consider TK Non-Commercial, TK Verified, or TK Notice
+  ├─ YES: TK Community Use Only
+  └─ NO:  Consider TK Non-Commercial, TK Verified, or TK Notice
            depending on the level of community review
 ```
 
