@@ -39,7 +39,7 @@ IEEE 2890-2025 : https://standards.ieee.org/ieee/2890/10318/
 __version__ = "0.1.0"
 __author__  = "Lilly Jones, PhD, Daear Consulting, LLC"
 
-from .labels import (
+from localcontexts.labels import (
     TKLabel,
     BCLabel,
     TKMetadata,
@@ -51,7 +51,7 @@ from .labels import (
     has_any_label,
 )
 
-from .local_contexts_geospatial.propagation import (
+from localcontexts.propagation import (
     propagate_labels,
     propagate_labels_strict,
     merge_labels,
@@ -60,7 +60,7 @@ from .local_contexts_geospatial.propagation import (
     add_provenance_step,
 )
 
-from .validation import (
+from localcontexts.validation import (
     TKViolationError,
     BCViolationError,
     ProvenanceError,
@@ -73,7 +73,7 @@ from .validation import (
     check_authority_to_control,
 )
 
-from .provenance import (
+from localcontexts.provenance import (
     ProvenanceOrigin,
     ProvenanceStep,
     ProvenanceRecord,
@@ -100,3 +100,4 @@ __all__ = [
     "build_sidecar_path", "attach_provenance_to_meta",
     "extract_provenance_from_meta",
 ]
+

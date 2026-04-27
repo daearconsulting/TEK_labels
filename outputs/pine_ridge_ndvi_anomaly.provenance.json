@@ -1,0 +1,67 @@
+{
+  "dataset_name": "pine_ridge_ndvi_2000_2023",
+  "ieee_2890": "https://standards.ieee.org/ieee/2890/10318/",
+  "care_aligned": true,
+  "created_at": "2026-04-27T20:00:49.822212+00:00",
+  "updated_at": "2026-04-27T20:00:49.840455+00:00",
+  "origin": {
+    "subject": "NDVI time series for Pine Ridge Oglala Lakota Nation",
+    "community": "Oglala Lakota Nation",
+    "territory": "Pine Ridge Reservation, South Dakota",
+    "source_name": "MODIS MOD13Q1 V061 via ORNL DAAC MODIS Web Service",
+    "source_url": "https://modis.ornl.gov/rst/api/v1/",
+    "source_steward": "NASA ORNL DAAC",
+    "obtained_date": "2026-04-27",
+    "tk_label": "TK Non-Commercial",
+    "label_authority": "Tribal Data Governance Office, Oglala Lakota Nation",
+    "license": "NASA data use policy: open for non-commercial research",
+    "access_conditions": "TK Non-Commercial label applies. Results must be shared with the Tribal Data Governance Office before publication."
+  },
+  "chain": [
+    {
+      "process": "Data ingested from ORNL DAAC MODIS Web Service",
+      "timestamp": "2026-04-27T20:00:49.822212+00:00",
+      "workflow": "pine_ridge_analysis.ipynb",
+      "inputs": [
+        "ORNL DAAC API response (MOD13Q1, lat=43.35, lon=-102.09, 2000-2023)"
+      ],
+      "outputs": [
+        "pine_ridge_ndvi_2000_2023.csv"
+      ],
+      "notes": "16-day composites, \u00b12km pixel average. Year-by-year queries (10-tile limit)."
+    },
+    {
+      "process": "Resample: 16-day to monthly mean NDVI",
+      "timestamp": "2026-04-27T20:00:49.840455+00:00",
+      "workflow": "07_ieee2890_provenance.ipynb",
+      "inputs": [
+        "pine_ridge_ndvi_2000_2023.csv"
+      ],
+      "outputs": [
+        "pine_ridge_ndvi_monthly.csv"
+      ]
+    },
+    {
+      "process": "Annual growing season mean (May\u2013Sep)",
+      "timestamp": "2026-04-27T20:00:49.840455+00:00",
+      "workflow": "07_ieee2890_provenance.ipynb",
+      "inputs": [
+        "pine_ridge_ndvi_monthly.csv"
+      ],
+      "outputs": [
+        "pine_ridge_ndvi_annual_gs.csv"
+      ]
+    },
+    {
+      "process": "Anomaly: annual GS NDVI minus long-term mean",
+      "timestamp": "2026-04-27T20:00:49.840455+00:00",
+      "workflow": "07_ieee2890_provenance.ipynb",
+      "inputs": [
+        "pine_ridge_ndvi_annual_gs.csv"
+      ],
+      "outputs": [
+        "pine_ridge_ndvi_anomaly.csv"
+      ]
+    }
+  ]
+}

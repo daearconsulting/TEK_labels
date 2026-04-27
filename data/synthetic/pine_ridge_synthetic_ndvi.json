@@ -1,0 +1,23 @@
+{
+  "file": "pine_ridge_synthetic_ndvi.tif",
+  "spatial_extent": {
+    "west": -103.5,
+    "south": 42.5,
+    "east": -101.5,
+    "north": 43.8
+  },
+  "crs": "EPSG:4326",
+  "dimensions": {
+    "width": 64,
+    "height": 64
+  },
+  "metadata": {
+    "CREATED": "2024",
+    "DESCRIPTION": "Synthetic NDVI for Pine Ridge, Oglala Lakota Nation",
+    "IEEE_2890": "https://standards.ieee.org/ieee/2890/10318/",
+    "SOURCE": "Synthetic data for demonstration only",
+    "tk": "usage=Non-commercial environmental research only",
+    "AREA_OR_POINT": "Area"
+  },
+  "ieee_2890": "https://standards.ieee.org/ieee/2890/10318/"
+}

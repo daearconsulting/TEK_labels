@@ -1,0 +1,25 @@
+{
+  "name": "pine_ridge_ndvi_anomaly",
+  "process": "NDVI anomaly (departure from 2000\u20132023 mean)",
+  "tk:label": "TK Non-Commercial",
+  "tk:community": "Oglala Lakota Nation",
+  "tk:authority": "Tribal Data Governance Office, Oglala Lakota Nation",
+  "tk:usage": "TK Non-Commercial label applies. Results must be shared with the Tribal Data Governance Office before publication.",
+  "tk:contact": "data@oglalalakota.org",
+  "tk:notes": null,
+  "tk:label_url": "https://localcontexts.org/labels/traditional-knowledge-labels/",
+  "prov:chain": [
+    {
+      "process": "Compute anomaly: annual GS NDVI minus 2000-2023 mean",
+      "workflow": "07_ieee2890_provenance.ipynb"
+    }
+  ],
+  "prov:process": "Compute anomaly: annual GS NDVI minus 2000-2023 mean",
+  "prov:workflow": "07_ieee2890_provenance.ipynb",
+  "care:collective_benefit": "Drought anomaly analysis supports OLN land management planning. Plain-language summary will be shared with OLN NRD.",
+  "care:consent_obtained": true,
+  "care:consent_description": "Email confirmation from OST NRD Director, 2024-03-15.",
+  "prov:dataset": "pine_ridge_ndvi_2000_2023",
+  "prov:community": "Oglala Lakota Nation",
+  "prov:ieee_2890": "https://standards.ieee.org/ieee/2890/10318/"
+}
