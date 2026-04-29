@@ -2,6 +2,7 @@
 **Author:** Lilly Jones, PhD, Daear Consulting, LLC  
 **Status:** Active development  
 **License:**  AGPL-3.0 license
+
 [![DOI](https://zenodo.org/badge/1211814979.svg)](https://doi.org/10.5281/zenodo.19892978)
 
 ## Overview
